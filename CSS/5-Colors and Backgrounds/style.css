@@ -1,0 +1,11 @@
+.style1 {
+    color: red;
+    background-color: rgba(155, 94, 94, 0.419);
+    background-size: cover;
+}
+
+.style2 {
+    color: #00f;
+    background-color: hsl(0, 4%, 60%);
+    background-size: contain;
+}
