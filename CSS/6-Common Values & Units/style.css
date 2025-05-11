@@ -1,0 +1,27 @@
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    /* rem is relative to root */
+    font-size: 2rem;
+    color: blueviolet;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.intro {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: blueviolet;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.description {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: blueviolet;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
