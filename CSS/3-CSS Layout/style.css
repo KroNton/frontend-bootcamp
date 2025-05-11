@@ -1,0 +1,27 @@
+.float-right {
+    float: right;
+    width: 80px;
+}
+
+
+
+.float-top {
+    float: top;
+    top: 10px;
+    position: absolute;
+
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #924444;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
