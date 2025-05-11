@@ -1,0 +1,68 @@
+/* selector{property:value;} */
+
+h1 {
+    color: rgb(27, 237, 27);
+}
+
+/* selector{property1:value;property1:value;.....} */
+
+h2 {
+    color: rgb(27, 27, 237);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* group */
+/* selector1,selector2{property1:value;property1:value;} */
+
+h3,
+h4 {
+    color: rgb(237, 27, 198);
+    font-size: 30px;
+}
+
+/* atteribute selector (type attribute) */
+/* selector[attribute]{property:value} */
+
+input[type="text"] {
+    background-color: rgb(27, 237, 27);
+    color: rgb(237, 27, 27);
+}
+
+#h2_id {
+    color: rgb(220, 143, 11);
+
+}
+
+/* class selector */
+/* selector.class{property:value} */
+p.right {
+    text-align: right;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.bold {
+    font-weight: bold;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.underline {
+    text-decoration: underline;
+}
+
+p.color1 {
+    color: rgb(237, 51, 27);
+}
+
+/* create color2 class general to be applied on any element */
+
+.color2 {
+    color: rgb(27, 132, 237);
+}
