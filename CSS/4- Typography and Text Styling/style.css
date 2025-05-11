@@ -1,0 +1,28 @@
+.style1 {
+    color: #ff5733;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.style2 {
+    color: #33ff57;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.style3 {
+    color: #3357ff;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: line-through;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
