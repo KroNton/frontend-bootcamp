@@ -1,0 +1,97 @@
+:root {
+    --bg-color: #191919;
+    --text-color: #FFF05A;
+    --button-bg-light: #FFAA5A;
+    --accent-color: #703D32;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.calContainer {
+    background: white;
+    flex: 1;
+    border-radius: 14px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.display {
+    background: var(--button-bg-light);
+    color: var(--text-color);
+    padding: 14px;
+    border-radius: 14px;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.display h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.butnsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 8;
+}
+
+.butnsRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    flex: 4;
+}
+
+.smRaw {
+    flex: 3 !important;
+
+
+}
+
+.smRaw>button:nth-child(1),
+.smRaw>button:nth-child(2) {
+    background: rgb(89, 55, 55) !important;
+}
+
+.btn {
+    background: var(--button-bg-light);
+    color: var(--text-color);
+    border: none;
+    padding: 14px;
+    border-radius: 14px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.8;
+
+}
+
+.btn p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
