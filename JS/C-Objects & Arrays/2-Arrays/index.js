@@ -25,3 +25,12 @@ for (let i = 0; i < myArray4.length; i++) {
     sum += myArray4[i]
 }
 console.log(sum);
+
+
+let myArray5 = [1, 2, 3, 4, 5];
+myArray5.push(6); // add 6 to the end of the array
+myArray5.push(7); // add 6 to the end of the array
+console.log(myArray5);
+const removed_elem = myArray5.pop(); // remove the last element of the array
+console.log(myArray5); // [1, 2, 3, 4, 5, 6]
+console.log(removed_elem); // 7
