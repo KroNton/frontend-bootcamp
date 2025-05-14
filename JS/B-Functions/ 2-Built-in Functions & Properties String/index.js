@@ -17,3 +17,11 @@ const x = "2"
 console.log(x + 2); // 22
 console.log(parseInt(x) + 2); // 4
 console.log(parseFloat(x) + 2.5); // 4.0
+
+let str = "JavaScript";
+console.log(str.substring(0, 4)); // Java
+
+console.log(isNaN("123a")) // true
+console.log(parseInt("5.5")) // 5
+console.log("123".length) // 3
+console.log("Hello".toUpperCase()); // HELLO
