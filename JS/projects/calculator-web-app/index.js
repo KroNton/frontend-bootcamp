@@ -35,7 +35,39 @@ function handleOperatorsInput(value) {
 }
 
 function handleEvaluate() {
-    let finalAmount = operations.
+    if (operations.length === 0) {
+        return
+    }
+
+    let finalAmount = operations[0]
+    let prevOperator = null
+
+    if (!currentValue) {
+        operations.pop();
+
+    } else {
+        operations.push(currentValue)
+        currentValue = ''
+
+    }
+
+    for (let index = 1; index < operations.length; index++) {
+        if (index % 2 === 0) {
+            // numerical value
+
+            finalAmount = eval(`${finalAmount}${prevOperator}${operations[index]}`)
+
+
+        } else {
+            // operator value
+            prevOperator = operations[index]
+
+        }
+
+    }
+    operations = []
+    currentValue = finalAmount
+    updateUI()
 }
 
 function handleReset() {
