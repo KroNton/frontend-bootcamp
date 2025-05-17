@@ -20,6 +20,7 @@ function handleInteraction(value) {
     updateUI()
 }
 function handleNumInput(value) {
+    if (value === '.' && currentValue.includes('.')) { return }
     currentValue += value;
     // console.log(' newvalue: ', currentValue);
 }
@@ -65,9 +66,9 @@ function handleEvaluate() {
         }
 
     }
-    operations = []
-    currentValue = finalAmount
-    updateUI()
+    operations = [];
+    currentValue = finalAmount;
+    updateUI();
 }
 
 function handleReset() {
