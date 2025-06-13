@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Same head as index.html -->
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- Same navigation as index.html -->
+    </header>
+
+    <section class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you</p>
+    </section>
+
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Visit Us</h2>
+            <address>
+                123 Gastronomy Avenue<br>
+                Culinary District<br>
+                New York, NY 10001
+            </address>
+
+            <h2>Hours</h2>
+            <p>Tuesday - Saturday: 5:30PM - 11:00PM</p>
+            <p>Sunday - Monday: Closed</p>
+
+            <h2>Contact Details</h2>
+            <p>Reservations: <a href="tel:+15551234567">(555) 123-4567</a></p>
+            <p>Email: <a href="mailto:reservations@eclat.com">reservations@eclat.com</a></p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="reservation">Reservation Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="private-event">Private Event</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map">
+        <iframe src="https://maps.google.com/maps?q=123+Gastronomy+Avenue&output=embed" frameborder="0"></iframe>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

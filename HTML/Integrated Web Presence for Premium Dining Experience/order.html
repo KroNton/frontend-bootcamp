@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Same head as index.html -->
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- Same navigation as index.html -->
+    </header>
+
+    <section class="order-hero">
+        <h1>Online Ordering</h1>
+        <p>Enjoy Éclat at home</p>
+    </section>
+
+    <section class="order-container">
+        <div class="order-steps">
+            <div class="step active">1. Select Items</div>
+            <div class="step">2. Delivery Info</div>
+            <div class="step">3. Payment</div>
+            <div class="step">4. Confirmation</div>
+        </div>
+
+        <div class="order-form">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="starters">Starters</button>
+                <button class="category-btn" data-category="mains">Main Courses</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="wines">Wines</button>
+            </div>
+
+            <div class="menu-items" id="starters">
+                <div class="menu-item">
+                    <img src="images/starter1.jpg" alt="Foie Gras">
+                    <div class="item-details">
+                        <h3>Seared Foie Gras</h3>
+                        <p>With caramelized figs and brioche</p>
+                        <p class="price">$38</p>
+                        <div class="quantity-control">
+                            <button class="decrement">-</button>
+                            <input type="number" value="0" min="0">
+                            <button class="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- More starter items -->
+            </div>
+
+            <div class="menu-items hidden" id="mains">
+                <!-- Main course items -->
+            </div>
+
+            <!-- Other categories -->
+
+            <div class="order-summary">
+                <h3>Your Order</h3>
+                <div class="summary-items">
+                    <!-- Dynamically populated with JavaScript -->
+                </div>
+                <div class="summary-total">
+                    <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                    <p>Delivery Fee: <span id="delivery">$15.00</span></p>
+                    <p>Total: <span id="total">$15.00</span></p>
+                </div>
+                <button class="checkout-btn" disabled>Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
