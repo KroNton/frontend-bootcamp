@@ -24,8 +24,8 @@
             <section class="current-weather">
                 <div class="weather-info">
                     <div class="location-date">
-                        <h2 id="city-name">New York, NY</h2>
-                        <p id="current-date">Monday, June 1, 2023</p>
+                        <h2 id="city-name">--</h2>
+                        <p id="current-date">--</p>
                     </div>
                     <div class="temperature">
                         <div class="current-temp">
@@ -33,8 +33,9 @@
                             <span class="temp-unit">°C</span>
                         </div>
                         <div class="weather-condition">
-                            <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Sunny">
-                            <span id="weather-desc">Sunny</span>
+                            <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png"
+                                alt="Weather icon">
+                            <span id="weather-desc">--</span>
                         </div>
                     </div>
                 </div>
@@ -42,26 +43,32 @@
                     <div class="detail-item">
                         <i class="fas fa-wind"></i>
                         <span>Wind</span>
-                        <span id="wind-speed">5 mph</span>
+                        <span id="wind-speed">--</span>
                     </div>
                     <div class="detail-item">
                         <i class="fas fa-tint"></i>
                         <span>Humidity</span>
-                        <span id="humidity">45%</span>
+                        <span id="humidity">--</span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-cloud-rain"></i>
-                        <span>Precipitation</span>
-                        <span id="precipitation">0%</span>
+                        <i class="fas fa-thermometer-half"></i>
+                        <span>Feels Like</span>
+                        <span id="feels-like">--</span>
                     </div>
                     <div class="detail-item">
                         <i class="fas fa-compress-alt"></i>
                         <span>Pressure</span>
-                        <span id="pressure">1012 hPa</span>
+                        <span id="pressure">--</span>
                     </div>
                 </div>
             </section>
 
+            <section class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-container" id="forecast-container">
+                    <!-- Forecast items will be added here dynamically -->
+                </div>
+            </section>
         </main>
     </div>
     <script src="index.js"></script>
