@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="homepage">
+    <header>
+        <h1><i class="fas fa-blog"></i> Blog Posts Home Page</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="blog-posts.html"><i class="fas fa-newspaper"></i> Blog Posts</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="blog-list-container">
+            <h2><i class="fas fa-list-ul"></i> Blog List</h2>
+            <ol class="blog-list">
+                <li class="blog-list-item">
+                    <a href="#post1"><i class="fas fa-mountain"></i> Exploring Nature's Wonders</a>
+                    <p class="post-excerpt">Discover the most beautiful natural landscapes...</p>
+                </li>
+                <li class="blog-list-item">
+                    <a href="#post2"><i class="fas fa-code"></i> The Art of Web Development</a>
+                    <p class="post-excerpt">Learn modern web development techniques...</p>
+                </li>
+                <li class="blog-list-item">
+                    <a href="#post3"><i class="fas fa-utensils"></i> Cooking Tips for Beginners</a>
+                    <p class="post-excerpt">Essential kitchen skills everyone should know...</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="blog-content">
+            <article class="blog-post" id="post1">
+                <h1><i class="fas fa-mountain"></i> Exploring Nature's Wonders</h1>
+                <div class="post-meta">
+                    <address>By Jane Smith</address>
+                    <time datetime="2025-09-22"><i class="far fa-calendar-alt"></i> September 22, 2025</time>
+                </div>
+
+                <img src="./data/nature.png" alt="Beautiful mountain landscape with sunset" loading="lazy">
+
+                <p>Nature offers us endless beauty and inspiration. From towering mountains to vast oceans, our planet
+                    is full of wonders waiting to be explored.</p>
+
+                <p>My top 5 nature destinations:</p>
+                <ol>
+                    <li>Patagonia, Argentina</li>
+                    <li>Banff National Park, Canada</li>
+                    <li>The Norwegian Fjords</li>
+                    <li>Great Barrier Reef, Australia</li>
+                    <li>Yellowstone National Park, USA</li>
+                </ol>
+
+                <p>Learn more about conservation efforts at the <a href="https://www.worldwildlife.org"
+                        target="_blank">World Wildlife Fund</a>.</p>
+            </article>
+
+            <article class="blog-post" id="post2">
+                <h1><i class="fas fa-code"></i> The Art of Web Development</h1>
+                <div class="post-meta">
+                    <address>By Kyrillos Fekry</address>
+                    <time datetime="2024-10-15"><i class="far fa-calendar-alt"></i> October 15, 2024</time>
+                </div>
+
+                <img src="./data/web_dev.png" alt="Web developer working on multiple screens" loading="lazy">
+
+                <p>Web development is both an art and a science. It requires creativity to design beautiful interfaces
+                    and technical skill to implement them effectively.</p>
+
+                <p>Here are some key aspects of modern web development:</p>
+                <ul>
+                    <li>Responsive design for all devices</li>
+                    <li>Accessibility considerations</li>
+                    <li>Performance optimization</li>
+                    <li>Security best practices</li>
+                </ul>
+
+                <p>For more information, check out this <a href="https://developer.mozilla.org" target="_blank">great
+                        resource</a> for web developers.</p>
+            </article>
+
+            <article class="blog-post" id="post3">
+                <h1><i class="fas fa-utensils"></i> Cooking Tips for Beginners</h1>
+                <div class="post-meta">
+                    <address>By Chef Michael</address>
+                    <time datetime="2024-08-10"><i class="far fa-calendar-alt"></i> August 10, 2024</time>
+                </div>
+
+                <img src="./data/cooking_tips.png" alt="Various fresh ingredients on a kitchen counter" loading="lazy">
+
+                <p>Starting to cook can be intimidating, but with these basic tips, you'll be preparing delicious meals
+                    in no time!</p>
+
+                <p>Essential kitchen tools every beginner should have:</p>
+                <ul>
+                    <li>A good chef's knife</li>
+                    <li>Cutting board</li>
+                    <li>Measuring cups and spoons</li>
+                    <li>Mixing bowls</li>
+                    <li>Non-stick skillet</li>
+                </ul>
+
+                <p>For great recipes, visit <a href="https://www.allrecipes.com" target="_blank">AllRecipes.com</a>.</p>
+            </article>
+
+            <section class="contact-section">
+                <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+                <form action="submit_contact_form.js" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+
+                <h2><i class="fas fa-info-circle"></i> Contact Info</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening Time</th>
+                            <th>Closing Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">We are closed on weekends.</td>
+                        </tr>
+                    </tfoot>
+                    <caption>
+                        <h3><i class="fas fa-clock"></i> Contact Hours</h3>
+                        <p>Feel free to reach out to us during our opening hours.</p>
+                    </caption>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 My Awesome Blog. All rights reserved.</p>
+        <p class="credits">Designed with <i class="fas fa-heart"></i> by Your Name</p>
+    </footer>
+</body>
+
+</html>

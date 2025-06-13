@@ -97,7 +97,53 @@
             <p>For great recipes, visit <a href="https://www.allrecipes.com" target="_blank">AllRecipes.com</a>.</p>
         </article>
 
+        <h1>Contact Us</h1>
+        <form action="submit_contact_form.js" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+        <h2>Contact Info</h2>
+        <table cellpadding="5" cellspacing="5">
+            <tr align="center">
+                <th>Day</th>
+                <th>Opening Time</th>
+                <th>Closing Time</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>9:00 AM</td>
+                <td>5:00 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>9:00 AM</td>
+                <td>5:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>9:00 AM</td>
+                <td>5:00 PM</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3" align="center">We are closed on weekends.</td>
+                </tr>
+            </tfoot>
+            <caption>
+                <h3>Contact Hours</h3>
+                <p>Feel free to reach out to us during our opening hours.</p>
+            </caption>
+
+        </table>
         <footer>
             <p>&copy; 2025 My Blog. All rights reserved.</p>
         </footer>
