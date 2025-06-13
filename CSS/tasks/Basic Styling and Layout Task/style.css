@@ -1,0 +1,136 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+h1,
+h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #3498db;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Blog List Styling */
+nav ol {
+    padding-left: 40px;
+}
+
+nav a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Blog Post Styling */
+.blog-post {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h1 {
+    color: #2c3e50;
+    text-align: left;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.blog-post img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+address,
+time {
+    font-style: normal;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.blog-post p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.blog-post ol,
+.blog-post ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.blog-post a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #7f8c8d;
+    border-top: 1px solid #ddd;
+}
